@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Motserrat", sans-serif
+}
+
+h2 {
+    color: red;
+font-size: 5rem;
+}
+
+.title {
+    color: blue;
+    font-size:4rem;
+}
+
+/* .demo {
+    color:red;
+} */
+
+/* if i just want demo next to title have color red
+ '+' is mean 'next'
+'~' is the same level
+ */
+
+.title + .demo{
+    color:red;
+}
+
+.list >li {
+    color: orange;
+}
+
+/* child: con tuc la du la the p li, hay bat ki gi ben trong thi cung la child
+    so we can use type
+
+*/
+
+.list2 li:nth-last-of-type(2) {
+    color: brown;
+    font-size: 4rem;
+}
+
+/* 
+^ bat dau
+$ ket thuc
+use for component complex or other people
+* co chua
+*/
+div[style^="cursor:pointer"] {
+    color: green;
+}
+
+div[data-title] {
+    color: pink;
+}
